@@ -5,9 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock paper scissors</title>
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <h1>Buenos días</h1>
-    <script src="script.js"></script>
+    <!-- Header -->
+    <header class="header container">
+      <h1 class="title">Rock, Paper, Scissors!</h1>
+      <h2 class="subtitle">
+        A project by Beñat Descalzo, made for
+        <a href="https://www.theodinproject.com" class="link"
+          >The Odin Project</a
+        >
+      </h2>
+    </header>
+    <!-- Main -->
+    <main class="main container">
+      <p class="explanation">
+        Win 5 rounds, and demonstrate who rules to your computer!
+      </p>
+
+      <!-- Player buttons -->
+      <div class="buttons">
+        <button class="btn" id="rock">Rock</button>
+        <button class="btn" id="paper">Paper</button>
+        <button class="btn" id="scissors">Scissors</button>
+      </div>
+
+      <!-- Results -->
+      <div class="results">
+        <p>Player: <span id="player-score">0</span></p>
+        <p>Computer: <span id="computer-score">0</span></p>
+        <p class="current-result">Choose one to start playing ;)</p>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
   </body>
 </html>

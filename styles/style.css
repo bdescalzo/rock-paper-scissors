@@ -1,0 +1,108 @@
+/* Common */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: rgba(20, 20, 200, 0.2);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+.header {
+  height: 20vh;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.subtitle {
+  margin-top: 1em;
+  font-weight: 500;
+  font-size: 1.6em;
+}
+
+.link {
+  text-decoration: none;
+  color: gray;
+  transition: 0.2s;
+}
+
+.link:hover {
+  color: white;
+  border-bottom: 3px solid black;
+}
+/* Main */
+
+.main {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 6em;
+  justify-content: center;
+  text-align: center;
+}
+
+.explanation {
+  font-size: 1.2em;
+}
+/* Buttons */
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+.btn {
+  font-size: 1.4em;
+  padding: 10px 30px;
+  border-radius: 3em;
+}
+
+/* Results */
+.results {
+  font-size: 1.2em;
+}
+
+.current-result {
+  margin-top: 2em;
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+.current-result--winner {
+  color: #008800;
+}
+
+.current-result--loser {
+  color: #ee0000;
+}
+
+@media (max-width: 1072px) {
+  /* Common */
+  .container {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  /* Header */
+  .header {
+    font-size: 14px;
+  }
+
+  /* Main */
+  .main {
+    gap: 1.6em;
+  }
+
+  /* Buttons */
+  .buttons {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn {
+    width: max-content;
+  }
+}
