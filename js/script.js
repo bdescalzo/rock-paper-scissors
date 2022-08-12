@@ -74,8 +74,11 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function game(playerSelection) {
-  // Count how many wins each player has
-
+  // Remove styled wins/loses
+  currentResultEl.classList.remove(
+    "current-result--winner",
+    "current-result--loser"
+  );
   // Choose for both players
   computerSelection = getComputerChoice();
 
